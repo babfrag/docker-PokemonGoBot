@@ -46,5 +46,4 @@ docker run \
 
 Copyright (C) 2016 Babfrag
 
-## Bot itself
-[the work of jabbink](https://github.com/jabbink/PokemonGoBot)
+## [All credits to jabbink](https://github.com/jabbink/PokemonGoBot)
