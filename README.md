@@ -24,7 +24,7 @@ docker build -t babfrag/docker-pokemongobot .
 
 ### Environment variables
 
-This Docker image uses the following two environment variables, that can be declared in an `env` file (see pogobot.env.example file):
+This Docker image uses the following four environment variables, that can be declared in an `env` file (see pogobot.env.example file):
 
 ```
 POGO_USERNAME=<google or ptc login>
