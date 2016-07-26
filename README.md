@@ -4,6 +4,10 @@ Docker image to run a Pokemon Go Bot from https://github.com/jabbink/PokemonGoBo
 
 Based on [anapsix/alpine-java:8_jdk](https://hub.docker.com/r/anapsix/alpine-java)
 
+## Install Docker
+
+Follow [these instructions](https://docs.docker.com/engine/installation/) to get Docker running on your server.
+
 ## Download
 
 Get the trusted build from the [Docker Hub registry](https://hub.docker.com/r/babfrag/docker-pokemongobot):
