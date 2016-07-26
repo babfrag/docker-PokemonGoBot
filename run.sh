@@ -17,7 +17,7 @@ wget https://raw.githubusercontent.com/jabbink/PokemonGoBot/master/config.proper
 /bin/sed -i "s/latitude=/latitude=${POGO_LATITUDE}/g" ./config.properties
 /bin/sed -i "s/longitude=/longitude=${POGO_LONGITUDE}/g" ./config.properties
 
-
+# And let's catch some of them
 ./gradlew run
 
 
