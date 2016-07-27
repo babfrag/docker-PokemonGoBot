@@ -28,7 +28,7 @@ docker build -t babfrag/docker-pokemongobot .
 
 ### Environment variables
 
-This Docker image uses mandatory environment variables that override config.properties defaults values, that can be declared in an `env` file (see pogobot.env.example file):
+This Docker image uses mandatory environment variables that override the bot [config.properties](https://raw.githubusercontent.com/jabbink/PokemonGoBot/master/config.properties.template) defaults values, that can be declared in an `env` file (see pogobot.env.example file):
 
 ```
 pogo_username=<google or ptc login>
