@@ -28,13 +28,24 @@ docker build -t babfrag/docker-pokemongobot .
 
 ### Environment variables
 
-This Docker image uses the following four environment variables, that can be declared in an `env` file (see pogobot.env.example file):
+This Docker image uses mandatory environment variables that override config.properties defaults values, that can be declared in an `env` file (see pogobot.env.example file):
 
 ```
-POGO_USERNAME=<google or ptc login>
-POGO_PASSWORD=<google or ptc password>
-POGO_LATITUDE=<starting latitude>
-POGO_LONGITUDE=<starting longitude>
+pogo_username=<google or ptc login>
+pogo_base64_password=<leave empty>
+pogo_password=<google or ptc password>
+pogo_latitude=<starting latitude like 1.50>
+pogo_longitude=<starting longitude like 1.50>
+```
+
+You can specify any other variables to override config.properties using pattern :
+```
+pogo_<property_to_override>=<custom value>
+```
+
+Example : if you want to override transfer_cp_threshold setting, add the following env variable:
+```
+pogo_transfer_cp_threshold=<your custom value>
 ```
 
 Start a new Docker container with the following command (replace `./pogobot.env` with your own `env` file) :
