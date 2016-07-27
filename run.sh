@@ -15,10 +15,12 @@ git submodule update --init --recursive
 wget https://raw.githubusercontent.com/jabbink/PokemonGoBot/master/config.properties.template -O ./config.properties
 
 # Configuration from env
-/bin/sed -i "s/username=/username=${POGO_USERNAME}/g" ./config.properties 
-/bin/sed -i "s/password=/password=${POGO_PASSWORD}/g" ./config.properties
-/bin/sed -i "s/latitude=/latitude=${POGO_LATITUDE}/g" ./config.properties
-/bin/sed -i "s/longitude=/longitude=${POGO_LONGITUDE}/g" ./config.properties
+for entry in `env |grep pogo_`
+do
+        param=`echo ${entry} | sed 's/pogo_//g' | cut -d= -f1`
+        value=`echo ${entry} | sed 's/pogo_//g' | cut -d= -f2`
+        /bin/sed -i "s/${param}=.*/${param}=${value}/g" ./config.properties
+done
 
 # And let's catch some of them
 ./gradlew run
