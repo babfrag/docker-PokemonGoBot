@@ -38,7 +38,7 @@ pogo_latitude=<starting latitude like 1.50>
 pogo_longitude=<starting longitude like 1.50>
 ```
 
-You can specify any other variables to override config.properties using pattern :
+You can specify any other variables to override properties using pattern :
 ```
 pogo_<property_to_override>=<custom value>
 ```
