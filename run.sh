@@ -12,7 +12,7 @@ git submodule update --init --recursive
 ./gradlew build
 
 # Last configuration file
-wget https://raw.githubusercontent.com/jabbink/PokemonGoBot/master/config.properties.template -O ./config.properties
+wget https://raw.githubusercontent.com/jabbink/PokemonGoBot/develop/config.properties.template -O ./config.properties
 
 # Configuration from env
 for entry in `env |grep pogo_`
