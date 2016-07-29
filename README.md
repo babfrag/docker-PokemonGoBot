@@ -49,17 +49,33 @@ pogo_transfer_cp_threshold=<your custom value>
 ```
 
 Start a new Docker container with the following command (replace `./pogobot.env` with your own `env` file) :
-
+This command uses defaults gui ports, of course you can customize them.
 ```
 docker run \
     --name pogobot \
     --env-file ./pogobot.env \
+    -p 8000:8000 \
+    -p 8001:8001 \
     babfrag/docker-pokemongobot
 ```
 
 ## Using traffic control for faking niantic api
 
 Docker image name for traffic control is babfrag/docker-pokemongobot:1.0.0-tc
+
+## docker-compose
+This command uses defaults gui ports, of course you can customize them.
+```
+pogobot:
+    image: babfrag/docker-pokemongobot
+    env_file:
+     - <path_to_env_file>
+    ports:
+     - 8000:8000
+     - 8001:8001
+    volumes:
+     - /etc/localtime:/etc/localtime:ro
+```
 
 
 
