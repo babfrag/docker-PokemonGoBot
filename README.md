@@ -1,5 +1,8 @@
 # Docker Pokemon Go Bot
 
+[![Docker Stars](https://img.shields.io/docker/stars/babfrag/docker-pokemongobot.svg)](https://hub.docker.com/r/babfrag/docker-pokemongobot) 
+[![Docker Pulls](https://img.shields.io/docker/pulls/babfrag/docker-pokemongobot.svg)](https://hub.docker.com/r/babfrag/docker-pokemongobot)
+
 Docker image to run a Pokemon Go Bot from https://github.com/jabbink/PokemonGoBot (develop)
 
 Based on [anapsix/alpine-java:8_jdk](https://hub.docker.com/r/anapsix/alpine-java)
