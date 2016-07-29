@@ -22,6 +22,9 @@ do
         /bin/sed -i "s/${param}=.*/${param}=${value}/g" ./config.properties
 done
 
+# Traffic control for niantic api patch
+tc qdisc add dev eth0 root netem delay 300ms rate 56kbit
+
 # And let's catch some of them
 ./gradlew run
 
