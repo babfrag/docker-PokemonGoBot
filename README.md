@@ -76,10 +76,6 @@ docker run \
     babfrag/docker-pokemongobot
 ```
 
-## Using traffic control for faking niantic api
-
-Docker image name for traffic control is babfrag/docker-pokemongobot:1.0.0-tc
-
 ## docker-compose
 This command uses defaults gui ports, of course you can customize them.
 ```
