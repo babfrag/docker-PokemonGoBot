@@ -52,9 +52,10 @@ pogo_transfer_cp_threshold=<your custom value>
 ```
 
 Start a new Docker container with the following command (replace `./pogobot.env` with your own `env` file) :
+
 This command uses defaults gui ports, of course you can customize them.
-Depending on your docker install, some of you (windows w/ docker toolbox) need to run this container with privileged
-so the traffic control trick can be done (-d --privileged).
+
+Depending on your docker install, some of you (windows w/ docker toolbox) need to run this container with privilege so the traffic control trick can be done (-d --privileged).
 
 ```
 docker run \
