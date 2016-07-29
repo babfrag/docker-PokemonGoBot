@@ -57,6 +57,7 @@ This command uses defaults gui ports, of course you can customize them.
 docker run \
     --name pogobot \
     --env-file ./pogobot.env \
+    -d --privileged \
     -p 8000:8000 \
     -p 8001:8001 \
     babfrag/docker-pokemongobot
@@ -71,6 +72,7 @@ This command uses defaults gui ports, of course you can customize them.
 ```
 pogobot:
     image: babfrag/docker-pokemongobot
+    privileged: true
     env_file:
      - <path_to_env_file>
     ports:
