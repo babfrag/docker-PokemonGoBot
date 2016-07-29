@@ -55,7 +55,7 @@ Start a new Docker container with the following command (replace `./pogobot.env`
 
 This command uses defaults gui ports, of course you can customize them.
 
-Depending on your docker install, some of you (windows w/ docker toolbox) need to run this container with privilege so the traffic control trick can be done (-d --privileged).
+Depending on your docker install, some of you (windows w/ docker toolbox) need to run this container with privilege so the traffic control trick can be done (-d --privileged). This avoids "RTNETLINK answers: Operation not permitted" error.
 
 ```
 docker run \
