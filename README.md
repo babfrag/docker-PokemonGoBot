@@ -55,10 +55,8 @@ Start a new Docker container with the following command (replace `./pogobot.env`
 
 This command uses defaults gui ports, of course you can customize them.
 
-This container needs to run w/ privileged so the traffic control trick can be done (-d --privileged).
-```
-tc qdisc add dev eth0 root netem delay 300ms rate 56kbit
-```
+This container needs to run w/ privileged so the traffic control trick can be done (-d --privileged) ```tc qdisc add dev eth0 root netem delay 300ms rate 56kbit```
+
 This avoids "RTNETLINK answers: Operation not permitted" error.
 
 ```
