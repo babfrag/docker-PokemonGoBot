@@ -11,6 +11,13 @@ Based on [anapsix/alpine-java:8_jdk](https://hub.docker.com/r/anapsix/alpine-jav
 
 Follow [these instructions](https://docs.docker.com/engine/installation/) to get Docker running on your server.
 
+## Tags
+Two versions of image exist :
+ - 1.0.0: no privilege needed, pull develop Pokemon Go Bot and run it from source
+ - 1.0.0-tc: extended privileges needed to control traffic and limit requests/secondes, pull develop and run it from source
+
+Latest version image (without specify tag version) is actually 1.0.0-tc (w/ traffic control)
+
 ## Download
 
 Get the trusted build from the [Docker Hub registry](https://hub.docker.com/r/babfrag/docker-pokemongobot):
