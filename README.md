@@ -13,7 +13,7 @@ Follow [these instructions](https://docs.docker.com/engine/installation/) to get
 Get the trusted build from the [Docker Hub registry](https://hub.docker.com/r/babfrag/docker-pokemongobot):
 
 ```
-docker pull babfrag/docker-pokemongobot:1.0.0
+docker pull babfrag/docker-pokemongobot
 ```
 
 or download and compile the source yourself from GitHub:
@@ -21,7 +21,7 @@ or download and compile the source yourself from GitHub:
 ```
 git clone https://github.com/babfrag/docker-PokemonGoBot.git
 cd docker-PokemonGoBot
-docker build -t babfrag/docker-pokemongobot:1.0.0 .
+docker build -t babfrag/docker-pokemongobot .
 ```
 
 ## How to use this image
@@ -54,7 +54,7 @@ Start a new Docker container with the following command (replace `./pogobot.env`
 docker run \
     --name pogobot \
     --env-file ./pogobot.env \
-    babfrag/docker-pokemongobot:1.0.0
+    babfrag/docker-pokemongobot
 ```
 
 ## Using traffic control for faking niantic api
