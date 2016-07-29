@@ -86,4 +86,4 @@ Let's catch some of them ! :sparkles::tada::rocket::sparkles:
 
 Copyright (C) 2016 Babfrag
 
-## [All credits to jabbink](https://github.com/jabbink/PokemonGoBot)
+## All credits to [AeonLucid](https://github.com/AeonLucid), [Grover-c13](https://github.com/Grover-c13), [jabbink](https://github.com/jabbink)
