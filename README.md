@@ -67,6 +67,11 @@ docker run \
     babfrag/docker-pokemongobot
 ```
 
+For windows users you may want had this option to make the requests limitaton work: 
+```
+-d --privileged 
+```
+
 ## Using traffic control for faking niantic api
 
 Docker image name for traffic control is babfrag/docker-pokemongobot:1.0.0-tc
