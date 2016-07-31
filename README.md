@@ -16,7 +16,7 @@ Two versions of image exist :
  - 1.0.0: no privilege needed, pull develop Pokemon Go Bot and run it from source
  - 1.0.0-tc: extended privileges needed to control traffic and limit requests/secondes, pull develop and run it from source
 
-Latest version image (without specify tag version) is actually 1.0.0-tc (w/ traffic control)
+Thanks to fixes of requests spamming in bot stack, latest is now without traffic control.
 
 ## Download
 
