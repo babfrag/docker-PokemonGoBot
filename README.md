@@ -42,7 +42,6 @@ This Docker image uses mandatory environment variables that override the bot [co
 
 ```
 pogo_username=<google or ptc login>
-pogo_base64_password=<leave empty>
 pogo_password=<google or ptc password>
 pogo_latitude=<starting latitude like 1.50>
 pogo_longitude=<starting longitude like 1.50>
@@ -71,7 +70,6 @@ docker run \
     --name pogobot \
     --env-file ./pogobot.env \
     -d --privileged \
-    -p 8000:8000 \
     -p 8001:8001 \
     babfrag/docker-pokemongobot
 ```
@@ -85,10 +83,17 @@ pogobot:
     env_file:
      - <path_to_env_file>
     ports:
-     - 8000:8000
      - 8001:8001
     volumes:
      - /etc/localtime:/etc/localtime:ro
+```
+
+## Web GUI
+![GUI Screenshot](http://pogo.abb.ink/img/gui-screenshot-01.png)
+
+Access your WebGui : 
+```
+http://pogo.abb.ink/0.5.0-alpha4/map.html#<host of docker container ip>:8001
 ```
 
 Let's catch some of them ! :sparkles::tada::rocket::sparkles:
