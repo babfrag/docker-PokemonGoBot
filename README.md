@@ -88,13 +88,12 @@ pogobot:
      - /etc/localtime:/etc/localtime:ro
 ```
 
-## Web GUI
-![GUI Screenshot](http://pogo.abb.ink/img/gui-screenshot-01.png)
+## Where did the GUI go?
 
-Access your WebGui : 
-```
-http://pogo.abb.ink/0.5.0-alpha4/map.html#<host of docker container ip>:8001
-```
+The GUI is now hosted on http://pogo.abb.ink/RocketTheme/
+
+This URL is also shown in the console when you launch the bot.
+
 
 Let's catch some of them ! :sparkles::tada::rocket::sparkles:
 
