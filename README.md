@@ -1,7 +1,7 @@
 # Docker Pokemon Go Bot
 
 [![Docker Stars](https://img.shields.io/docker/stars/babfrag/docker-pokemongobot.svg)](https://hub.docker.com/r/babfrag/docker-pokemongobot) 
-[![Docker Pulls](https://img.shields.io/docker/pulls/babfrag/docker-pokemongobot.svg)](https://hub.docker.com/r/babfrag/docker-pokemongobot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/babfrag/docker-pokemongobot.svg)](https://hub.docker.com/r/babfrag/docker-pokemongobot) [![](https://images.microbadger.com/badges/image/babfrag/docker-pokemongobot.svg)](https://microbadger.com/images/babfrag/docker-pokemongobot "Get your own image badge on microbadger.com")
 
 Docker image to run a Pokemon Go Bot from https://github.com/jabbink/PokemonGoBot (develop)
 
@@ -102,3 +102,4 @@ Let's catch some of them ! :sparkles::tada::rocket::sparkles:
 Copyright (C) 2016 Babfrag
 
 ## All credits to [AeonLucid](https://github.com/AeonLucid), [Grover-c13](https://github.com/Grover-c13), [jabbink](https://github.com/jabbink)
+ 
